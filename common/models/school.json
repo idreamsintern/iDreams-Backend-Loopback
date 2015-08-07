@@ -7,14 +7,41 @@
     "validateUpsert": true
   },
   "properties": {
-    "abbr_name": {
-      "type": "string",
-      "required": true
+    "name": {
+      "abbr_name": {
+        "type": "string",
+        "required": true
+      },
+      "full_name": {
+        "type": "string",
+        "required": true
+      }
     },
-    "full_name": {
-      "type": "string",
-      "required": true
+    "local": {
+      "state": {
+        "type": "String",
+        "required": "true"
+      },
+      "city": {
+        "type": "String",
+        "required": "true"
+      }
     },
+    "fee":{
+      "inituition_month": {
+        "type": "Number",
+        "required": "true"
+      },
+      "room_month": {
+        "type": "Number",
+        "required": "true"
+      },
+      "room_year": {
+        "type": "Number",
+        "required": "true"
+      }
+    },
+    "sports": "[String]",
     "mascot": {
       "type": "string",
       "required": true
